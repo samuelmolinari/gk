@@ -1,18 +1,17 @@
 machine:
   node:
-    version:  5.4.1
+    version: "5.4.1"
 
 dependencies:
   override:
-    - npm install
-    - sudo pip install awscli
-
-    cache_directories:
-      - "node_modules"
+    - "npm install"
+    - "sudo pip install awscli"
+  cache_directories:
+    - node_modules
 
 deployment:
- aws:
-  branch: master
-  commands:
-    - npm run build
-    - ./sh/deploy.sh
+  aws:
+    branch: master
+    commands:
+      - "npm run build"
+      - ./sh/deploy.sh

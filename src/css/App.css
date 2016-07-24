@@ -1,0 +1,154 @@
+.App-nav {
+  padding: 20px 0
+}
+
+.App-login-container {
+  text-align: right;
+}
+
+.App-logo {
+  height: 20px;
+}
+
+.App-icon {
+  height: 90px;
+}
+
+.App-logo-container {
+  text-align: center;
+}
+
+.App-title-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.App-get-started-container {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.App-get-started {
+  display: inline-block;
+  background: #CD297A;
+  box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.17);
+  border-radius: 2px;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 150px;
+}
+
+.App-get-started:hover {
+  color: white;
+}
+
+.App-header {
+  background-color: #222;
+  min-height: 300px;
+  padding: 80px 20px 20px 20px;
+  color: white;
+  background-image: url('../images/header.png');
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.App-header h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.App-header h1 {
+font-family: 'Montez', cursive;
+  font-size: 50px;
+  line-height: 1em;
+  padding: 0 0 5px 0;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  text-shadow: 0px 0.5px 0px rgba(0,0,0,0.33);
+}
+
+h2 {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.App-header p {
+  font-weight: 200;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  text-shadow: 0px 0.5px 0px rgba(0,0,0,0.33);
+  opacity: 0.8;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.App-section-icon {
+  width: 100px;
+}
+
+.App-section p {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 200;
+  color: #4A4A4A;
+  text-align: center;
+}
+
+.col-md-6:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.App-section-header {
+  text-align: center;
+}
+
+.App-section h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .App-logo-container {
+    text-align: right;
+  }
+
+  .App-title-container {
+    text-align: left;
+  }
+
+
+  .App-header {
+    padding: 160px 20px 100px 20px;
+  }
+
+  .App-get-started-container {
+    margin-top: 60px
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-6:nth-child(even) {
+    background-color: transparent;
+  }
+
+  .App-section h3 {
+    padding-left: 20px;
+  }
+
+  .App-section p {
+    text-align: left;
+  }
+}

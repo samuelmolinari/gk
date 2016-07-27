@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './css/App.css';
+import '../../css/Home.css';
 
 class IntroSection extends Component {
   render() {
     return (
-      <div className="App-section">
+      <div className="Home-section">
         <div className="row">
           <div className="col-md-3"></div>
           <div className="col-md-9">
@@ -12,8 +12,8 @@ class IntroSection extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-3 App-section-header">
-            <img src={this.props.icon} className="App-section-icon" alt="logo" />
+          <div className="col-md-3 Home-section-header">
+            <img src={this.props.icon} className="Home-section-icon" alt="logo" />
             <h3 className="visible-xs visible-sm">{this.props.title}</h3>
           </div>
           <div className="col-md-9">

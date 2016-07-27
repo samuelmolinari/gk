@@ -1,34 +1,22 @@
-.App-nav {
-  padding: 20px 0
-}
-
-.App-login-container {
-  text-align: right;
-}
-
-.App-logo {
-  height: 20px;
-}
-
-.App-icon {
+.Home-icon {
   height: 90px;
 }
 
-.App-logo-container {
+.Home-logo-container {
   text-align: center;
 }
 
-.App-title-container {
+.Home-title-container {
   text-align: center;
   margin-top: 10px;
 }
 
-.App-get-started-container {
+.Home-get-started-container {
   text-align: center;
   padding: 30px 0;
 }
 
-.App-get-started {
+.Home-get-started {
   display: inline-block;
   background: #CD297A;
   box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.17);
@@ -40,11 +28,11 @@
   min-width: 150px;
 }
 
-.App-get-started:hover {
+.Home-get-started:hover {
   color: white;
 }
 
-.App-header {
+.Home-header {
   background-color: #222;
   min-height: 300px;
   padding: 80px 20px 20px 20px;
@@ -54,12 +42,12 @@
   background-position: bottom left;
 }
 
-.App-header h1 {
+.Home-header h1 {
   padding: 0;
   margin: 0;
 }
 
-.App-header h1 {
+.Home-header h1 {
 font-family: 'Montez', cursive;
   font-size: 50px;
   line-height: 1em;
@@ -75,7 +63,7 @@ h2 {
   font-size: 30px;
 }
 
-.App-header p {
+.Home-header p {
   font-weight: 200;
   font-size: 15px;
   color: #FFFFFF;
@@ -84,20 +72,20 @@ h2 {
   opacity: 0.8;
 }
 
-.App-intro {
+.Home-intro {
   font-size: large;
 }
 
-.App-section {
+.Home-section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.App-section-icon {
+.Home-section-icon {
   width: 100px;
 }
 
-.App-section p {
+.Home-section p {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -111,30 +99,30 @@ h2 {
   background-color: #fafafa;
 }
 
-.App-section-header {
+.Home-section-header {
   text-align: center;
 }
 
-.App-section h3 {
+.Home-section h3 {
   font-weight: bold;
   font-size: 20px;
 }
 
 @media (min-width: 768px) {
-  .App-logo-container {
+  .Home-logo-container {
     text-align: right;
   }
 
-  .App-title-container {
+  .Home-title-container {
     text-align: left;
   }
 
 
-  .App-header {
+  .Home-header {
     padding: 160px 20px 100px 20px;
   }
 
-  .App-get-started-container {
+  .Home-get-started-container {
     margin-top: 60px
   }
 }
@@ -144,11 +132,11 @@ h2 {
     background-color: transparent;
   }
 
-  .App-section h3 {
+  .Home-section h3 {
     padding-left: 20px;
   }
 
-  .App-section p {
+  .Home-section p {
     text-align: left;
   }
 }

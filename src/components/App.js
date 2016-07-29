@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Nav from './components/Nav.js'
+import Nav from './Nav.js'
 
 class App extends Component {
   render() {

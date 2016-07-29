@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 
-import IntroSection from './components/home/IntroSection.js'
+import IntroSection from './home/IntroSection.js'
 
-import icon from './images/icon.png';
-import renewal from './images/renewal.png';
-import timeless from './images/timeless.png';
-import recyclable from './images/recyclable.png';
-import './css/Home.css';
+import icon from '../images/icon.png';
+import renewal from '../images/renewal.png';
+import timeless from '../images/timeless.png';
+import recyclable from '../images/recyclable.png';
+import '../css/Home.css';
 
 class Home extends Component {
   render() {

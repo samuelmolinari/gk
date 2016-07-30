@@ -1,27 +1,20 @@
-import {Store} from 'flux/utils';
+import {MapStore} from 'flux/utils';
 import Immutable from 'immutable';
 import GkDispatcher from '../dispatcher/GkDispatcher';
 
-class OutfitStore extends Store {
-  constructor(dispatcher) {
-    super(dispatcher);
-    this._items = Immutable.List();
+class OutfitStore extends MapStore {
+  getInitialState() {
+    return Immutable.Map();
   }
 
-  getItems() {
-    return this._items;
-  }
 
-  __onDispatch(action) {
+  reduce(state, action) {
     switch (action.type) {
       case 'outfit/add-item':
-        this._items.push(action.item);
-        break;
+        return state.set(action.item.id, action.item);
       default:
-        break;
+        return state;
     }
-
-    this.__emitChange();
   }
 }
 

@@ -13,9 +13,7 @@ class Item extends Component {
   _click() {
     GkDispatcher.dispatch({
       type: 'outfit/add-item',
-      item: {
-        id: 1
-      }
+      item: this.props.data.toObject()
     });
   }
 }

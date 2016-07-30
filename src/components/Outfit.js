@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import OutfitStore from '../stores/OutfitStore';
-import Item from './Item';
+import Catalog from './Catalog';
 
 import '../css/Outfit.css';
 
@@ -9,14 +9,14 @@ class Outfit extends Component {
     super(props);
 
     this.state = {
-      items: []
+      items: OutfitStore.getState().toList()
     };
 
     this._storeListener = null;
   }
 
   componentDidMount() {
-    this._storeListener = OutfitStore.addListener((state) => this._onChange(state));
+    this._storeListener = OutfitStore.addListener(() => this._onChange());
   }
 
   componentWillUnmount() {
@@ -26,13 +26,20 @@ class Outfit extends Component {
   render() {
     return (
       <div className="Outfit">
-        <Item />
+        <Catalog />
+        <ul>
+          {
+            this.state.items.map((item) => (
+              <li key={item.id}>{item.id}</li>
+            ))
+          }
+        </ul>
       </div>
     );
   }
 
-  _onChange(state) {
-    this.setState({items: OutfitStore.getItems()});
+  _onChange() {
+    this.setState({items: OutfitStore.getState().toList()});
   }
 }
 

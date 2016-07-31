@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import CatalogStore from '../stores/CatalogStore';
 import Item from './Item';
+import '../css/Catalog.css';
 
 class Catalog extends Component {
   constructor(props) {
@@ -28,16 +29,18 @@ class Catalog extends Component {
   render() {
     return (
       <div className="Catalog">
-        <ul>
+        <ul className="Catalog-ul">
           {
             this.state.items.map((item) => (
-              <li key={item.get('id')}>
+              <li className="Catalog-li" key={item.get('id')}>
                 <Item data={item} />
               </li>
             ))
           }
         </ul>
-        <button onClick={() => this._loadNextPage()}>Load more</button>
+        <div className="Catalog-load-more-container">
+          <button className="Catalog-load-more" onClick={() => this._loadNextPage()}>Load more</button>
+        </div>
       </div>
     )
   }

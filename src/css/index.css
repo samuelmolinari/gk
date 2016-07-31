@@ -7,3 +7,7 @@ body {
 a, a:hover {
   color: #4A4A4A;
 }
+
+ul {
+  padding: 0;
+}

@@ -25,7 +25,10 @@ class Outfit extends Component {
 
   render() {
     return (
-      <div className="Outfit">
+      <div className="Outfit container">
+        <header>
+          <h1 className="text-center">Your weekly<br/>Spring/Summer outfit</h1>
+        </header>
         <Catalog />
         <ul>
           {

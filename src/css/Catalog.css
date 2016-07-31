@@ -1,0 +1,39 @@
+.Catalog-ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.Catalog-li {
+  list-style: none;
+  width: 100%;
+}
+
+.Catalog-load-more-container {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.Catalog-load-more {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid #61D4E2;
+  background-color: white;
+  color: #61D4E2;
+  line-height: 1em;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .Catalog-li {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .Catalog-li {
+    max-width: 33.33%;
+  }
+}
